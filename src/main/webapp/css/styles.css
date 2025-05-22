@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+/* Page heading */
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #333;
+  }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.flex-box {
+    width: 50%;
+    padding: 5px;
+    background-color: #f7f8f7;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+
+
+  
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .flex-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .flex-box {
+      width: 100%;
+    }
+  }
+
+  /* Footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 15px 0;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1.5rem 1rem;
+  background-color: #343a40 !important;
+  transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.navbar .navbar-brand {
+  color: white !important;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-link {
+  color: white !important;
+  margin-left: 1rem;
+}
+
+.navbar .nav-link:hover {
+  color: #f8f9fa !important;
+}
+
+/* Navbar Small (On Scroll) */
+.navbar-small {
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.navbar-small .navbar-brand {
+  font-size: 1.2rem;
+}
+
+.navbar-small .nav-link {
+  color: white !important;
+}
+
+/* Logo Sizes */
+.navbar-brand img {
+  height: auto;
+  max-height: 80px;
+  margin-right: 10px;
+  vertical-align: middle;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.navbar-brand-small img {
+  max-height: 40px;
+}
+
+/* Custom Buttons */
+.btn-custom {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-custom:hover {
+  background-color: #0056b3;
+}
+
+/* Login/Signup Nav Links */
+.navbar-nav.ms-auto .nav-link {
+  color: #f8f9fa !important;
+  margin-left: 0.5rem;
+}
+  
